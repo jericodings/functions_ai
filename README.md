@@ -1,6 +1,6 @@
 # Function AI Crate
 
-The 'ai_function' crate provides a Rust procedural macro that allows you to transform any function into a function that returns its own definition as a string. This is useful for sending the function's code to a large language model for further processing.
+The 'function_ai' crate provides a Rust procedural macro that allows you to transform any function into a function that returns its own definition as a string. This is useful for sending the function's code to a large language model for further processing.
 
 ## Installation
 
@@ -8,19 +8,19 @@ Add the following to your 'Cargo.toml' file:
 
 ```toml
 [dependencies]
-ai_function = "0.1.0"
+function_ai = "0.1.0"
 ```
 
-Then run cargo build to download and compile the ai_function crate.
+Then run cargo build to download and compile the function_ai crate.
 
 ## Usage
 
-To use the ai_function macro, simply annotate your function with #[ai_function].
+To use the function_ai macro, simply annotate your function with #[function_ai].
 
-use ai_function::ai_function;
+use function_ai::function_ai;
 
 ```
-#[ai_function]
+#[function_ai]
 fn example_function(arg: i32) -> i32 {
   arg \* 2
 }
@@ -30,12 +30,12 @@ When you call example_function(), instead of returning arg * 2, it will return a
 
 ## Limitations
 
-The #[ai_function] macro currently does not support functions with complex control flow like loops or conditionals. It only supports simple function definitions.
+The #[function_ai] macro currently does not support functions with complex control flow like loops or conditionals. It only supports simple function definitions.
 
 ```
-use ai_functions::ai_function;
+use function_ais::function_ai;
 
-#[ai_function]
+#[function_ai]
 fn add(a: i32, b: i32) -> i32 {
     a + b
 }
