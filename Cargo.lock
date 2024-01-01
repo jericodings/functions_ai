@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "functions_ai"
+name = "func_ai"
 version = "0.1.4"
 dependencies = [
  "proc-macro2",
