@@ -1,5 +1,7 @@
 [package]
 name = "functions_ai"
+description = "Funtion to string implementation for LLMs"
+license = "MIT"
 version = "0.1.0"
 edition = "2021"
 
