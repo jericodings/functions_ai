@@ -1,4 +1,4 @@
-# Function AI Crate
+# Functions AI Crate
 
 The 'function_ai' crate provides a Rust procedural macro that allows you to transform any function into a function that returns its own definition as a string. This is useful for sending the function's code to a large language model for further processing.
 
