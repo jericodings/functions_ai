@@ -3,7 +3,7 @@ name = "functions_ai"
 description = "Function to string implementation for LLMs"
 license = "MIT"
 version = "0.1.0"
-edition = "2023"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
